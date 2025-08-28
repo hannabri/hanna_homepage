@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+            <table class="menu">
+                <!-- <tr><td><img src="foto_me.JPG" width="80%"> </td></tr> -->
+                <tr>
+                    <td><a href="#about">About me</a></td>
+                    <td><a href="#projects">Projects</a></td>                
+                    <td><a href="#experiences">Professional Experiences</a></td>
+                    <td><a href="#education">Education</a></td>
+                    <td><a href="#fun">Fun Facts</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="info">
+            <div id="about">
+                <h1>About me</h1>
+                <img src="foto_me.JPG" width="25%">             
+                <p><br>Hi, my name is Hanna.<br>
+                I am a Data Scientist with great knowledge in NLP and GenAI that I acquired during my NLP masters
+                and my internships. The courses covered traditional NLP as well as more recent developments.
+                I worked with LLMs both in local through ollama and with the OpenAI and Mistral API. In my end-of-study internship
+                I built a simple Re-Act Agent with LangGraph.</p>
+                <p>I would describe myself as open-minded and curious to always learn new things. I am also a creative person when it comes 
+                to problem sovling. An advantage in programming where things are never working out as they should the first time.
+                My adaptability and quick understanding have been most appreciated during my former work experiences.</p>
+
+            </div>
+        </div>
+
+    <div id="projects">
+        <h1>Projects</h1>
+        <br>
+        <table class="projects">
+            <tr>
+                <th>Predictive Text Input</th>
+                <td>Final bachelor project in Computational Linguistics. This application suggests words while typing a message. It is composted of 
+                <ul>
+                    <li>prediction where the user did not start typing a new word yet and</li>
+                    <li>completion where at least the first character is already known.</li>
+                </ul>
+                Here is the link to the <a href="https://github.com/hannabri/saisie_predictive" target="_blank">GitHub project</a>.
+                </td>
+            </tr>
+
+            <tr>
+                <th>Semi Supervised Word Sense Disambiguation</th>
+                <td>Final M1 project in Computational Linguistics. This project compares two approaches for word sense disambiguation:
+                <ul>
+                    <li>a classification approach where training is supervised and</li>
+                    <li>a clustering approach where training is not supervised.</li>
+                </ul>
+                We also tested a seeded clustering approach where the centroids were initiated with up to 5 examples.<br>
+                Here is the link to the <a href="https://github.com/hannabri/word_sense_disambiguation" target="_blank">GitHub project</a>.
+                </td>
+            </tr>
+
+            <tr>
+                <th>Fine-tune mBERT</th>
+                <td>University project to analyze mBERT's generalization capacities. The model was fine-tuned five times on five different languages:
+                <ul>
+                    <li>French</li>
+                    <li>Spanish</li>
+                    <li>German</li>
+                    <li>Turkish</li>
+                    <li>Czech</li>
+                </ul>
+                Each fine-tuned model was tested on all languages. <br>
+                Here is the link to the <a href="https://github.com/hannabri/fine_tune_mbert" target="_blank">GitHub project</a>.
+                </td>
+            </tr>
+        </table>
+        <p> </p>
+    </div>
+
+    <div id ="experiences">
+        <h1>Professional Experiences</h1>
+        <h3>Internship NLP / GenAI - <a href="https://www.3ds.com/" target="_blank">Dassault Systèmes</a></h3>
+        <p>
+            Six-month internship between January and July 2025 to build a recommandation system for the CPQ tool in 
+            ENOVIA's PLM portfolio.The steps followed during the internship were the following:
+            <ul class="dassault">
+                <li><b>Dynamic Web Scraping</b> to build a test dataset with data from the web.</li>
+                <li>Creation of an <b>RDF graph</b> written in Turtle syntax.</li>
+                <li>Creation of a <b>Retrieval Augmented Generation (RAG) system</b> using a simple Re-Act agent and querying two different data bases:
+                <ul>
+                    <li>the created RDF graph for structured data and</li>
+                    <li>a FAISS vector database for unstructured data.</li>
+                </ul></li>
+                <li>SPARQL query generation with a <b>Mistral LLM, a Chain-of-Thought prompt and in-context learning</b> similar to the user question.</li>
+                <li>Creation of a simple <b>user interface</b> allowing an easier way to ask questions.</li>
+            </ul>
+            After completing the RAG system, I worked with an internal Business Intelligence system for data analysis.
+        </p>
+    </div>
+
+    <div id ="education">
+        <h1>Education</h1>
+    </div>
+
+    <div id ="fun">
+        <h1>Fun Facts</h1>
+    </div>
+    
+</body>
