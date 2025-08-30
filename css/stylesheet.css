@@ -21,7 +21,6 @@ p {
 td, th {
     text-align: left;
     padding: 5px;
-    /* border: 1px solid black; */
 }
 
 a {
@@ -50,7 +49,6 @@ a:hover {
 
 .menu {
     width: 100%;
-    /* border-collapse: collapse; */
     table-layout: fixed;
 }
 
@@ -101,7 +99,7 @@ table.projects td, table.projects th, table.exp td, table.exp th{
     padding-top: 15px;
 }
 
-/* Experiences */
+/* Experiences Section */
 
 .dassault li, .igm li, .llf li{
     padding:3px;
@@ -111,7 +109,6 @@ table.projects td, table.projects th, table.exp td, table.exp th{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    /* white-space: nowrap; */
     border-collapse: collapse;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -178,7 +175,7 @@ table.projects td, table.projects th, table.exp td, table.exp th{
   margin: 25px;
   border: 1px solid #ccc;
   float: left;
-  width: 350px;
+  width: 410px;
 }
 
 .gallery img {
