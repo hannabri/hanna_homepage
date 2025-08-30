@@ -53,6 +53,9 @@
                     <li>prediction where the user did not start typing a new word yet and</li>
                     <li>completion where at least the first character is already known.</li>
                 </ul>
+                For word completion, we used a trie structure as it allows to store letters that compose words. 
+                This makes it easier to extract <br>the list of suggestions at each character written by the user.
+                The suggestions are based on probabilities calculated over a French SMS corpus. <br>
                 Here is the link to the <a href="https://github.com/hannabri/saisie_predictive" target="_blank">GitHub project</a>.
                 </td>
             </tr>
@@ -64,7 +67,9 @@
                     <li>a classification approach where training is supervised and</li>
                     <li>a clustering approach where training is not supervised.</li>
                 </ul>
-                We also tested a seeded clustering approach where the centroids were initiated with up to 5 examples.<br>
+                We also tested a seeded clustering approach where the centroids were initiated with up to 5 examples. The training data<br>
+                was taken from a French verb dataset which includes around 50 examples per verb.<br>
+                In our project, the seeded clustering worked best of all tested methods.<br>
                 Here is the link to the <a href="https://github.com/hannabri/word_sense_disambiguation" target="_blank">GitHub project</a>.
                 </td>
             </tr>
@@ -79,7 +84,9 @@
                     <li>Turkish</li>
                     <li>Czech</li>
                 </ul>
-                Each fine-tuned model was tested on all languages. <br>
+                Each fine-tuned model was tested on all languages. For the language the model was fine-tuned on, it achieved more than 90 % accuracy.<br>
+                When used with another language, the models performance decreases drastically. Only the Czech model used with German performs well <br>
+                with more than 75 % accuracy and vice versa, the model trained on German und used with Czech achieves around 60 % accuracy. <br>
                 Here is the link to the <a href="https://github.com/hannabri/fine_tune_mbert" target="_blank">GitHub project</a>.
                 </td>
             </tr>
@@ -93,8 +100,7 @@
             <tr>
                 <td>
                     <h3>Internship NLP / GenAI - <a href="https://www.3ds.com/" target="_blank">Dassault Systèmes</a></h3>
-                    <p>Six-month internship between January and July 2025 to build a recommandation system for the CPQ tool in 
-                    ENOVIA's PLM portfolio.The steps followed during the internship were the following:
+                    <p>Six-month internship between January and July 2025 to build a recommandation system. The steps followed during the internship were the following:
                     <ul class="dassault">
                         <li><b>Dynamic Web Scraping</b> to build a test dataset with data from the web.</li>
                         <li>Creation of an <b>RDF graph</b> written in Turtle syntax.</li>
