@@ -19,7 +19,7 @@
         <div class="info">
             <div id="about">
                 <h1>About me</h1>
-                <img src="foto_me.JPG" width="25%">             
+                <img class="photo" src="foto_me.JPG" width="25%">             
                 <p><br>Hi, my name is Hanna.<br>
                 I am a Data Scientist with great knowledge in NLP and GenAI that I acquired during my NLP masters
                 and my internships. The courses covered traditional NLP as well as more recent developments.
@@ -28,6 +28,16 @@
                 <p>I would describe myself as open-minded and curious to always learn new things. I am also a creative person when it comes 
                 to problem sovling. An advantage in programming where things are never working out as they should the first time.
                 My adaptability and quick understanding have been most appreciated during my former work experiences.</p>
+                <div class="accounts"> 
+                    <p>My social accounts:</p>
+                    <a href="https://www.linkedin.com/in/hanna-brinkmann/" target="_blank">
+                        <img src="linkedin.png" height="40px">
+                    </a> &nbsp;
+                    <a href="https://github.com/hannabri" target="_blank">
+                        <img src="github.png" height="40px">
+                    </a>
+                    
+                </div>
 
             </div>
         </div>
@@ -37,7 +47,7 @@
         <br>
         <table class="projects">
             <tr>
-                <th>Predictive Text Input</th>
+                <th><a href="https://github.com/hannabri/saisie_predictive" target="_blank">Predictive Text Input</a></th>
                 <td>Final bachelor project in Computational Linguistics. This application suggests words while typing a message. It is composted of 
                 <ul>
                     <li>prediction where the user did not start typing a new word yet and</li>
@@ -48,7 +58,7 @@
             </tr>
 
             <tr>
-                <th>Semi Supervised Word Sense Disambiguation</th>
+                <th><a href="https://github.com/hannabri/word_sense_disambiguation" target="_blank">Semi Supervised Word Sense Disambiguation</a></th>
                 <td>Final M1 project in Computational Linguistics. This project compares two approaches for word sense disambiguation:
                 <ul>
                     <li>a classification approach where training is supervised and</li>
@@ -60,7 +70,7 @@
             </tr>
 
             <tr>
-                <th>Fine-tune mBERT</th>
+                <th><a href="https://github.com/hannabri/fine_tune_mbert" target="_blank">Fine-tune mBERT</a></th>
                 <td>University project to analyze mBERT's generalization capacities. The model was fine-tuned five times on five different languages:
                 <ul>
                     <li>French</li>
@@ -79,31 +89,118 @@
 
     <div id ="experiences">
         <h1>Professional Experiences</h1>
-        <h3>Internship NLP / GenAI - <a href="https://www.3ds.com/" target="_blank">Dassault Systèmes</a></h3>
-        <p>
-            Six-month internship between January and July 2025 to build a recommandation system for the CPQ tool in 
-            ENOVIA's PLM portfolio.The steps followed during the internship were the following:
-            <ul class="dassault">
-                <li><b>Dynamic Web Scraping</b> to build a test dataset with data from the web.</li>
-                <li>Creation of an <b>RDF graph</b> written in Turtle syntax.</li>
-                <li>Creation of a <b>Retrieval Augmented Generation (RAG) system</b> using a simple Re-Act agent and querying two different data bases:
-                <ul>
-                    <li>the created RDF graph for structured data and</li>
-                    <li>a FAISS vector database for unstructured data.</li>
-                </ul></li>
-                <li>SPARQL query generation with a <b>Mistral LLM, a Chain-of-Thought prompt and in-context learning</b> similar to the user question.</li>
-                <li>Creation of a simple <b>user interface</b> allowing an easier way to ask questions.</li>
-            </ul>
-            After completing the RAG system, I worked with an internal Business Intelligence system for data analysis.
-        </p>
-    </div>
+        <table class="exp">
+            <tr>
+                <td>
+                    <h3>Internship NLP / GenAI - <a href="https://www.3ds.com/" target="_blank">Dassault Systèmes</a></h3>
+                    <p>Six-month internship between January and July 2025 to build a recommandation system for the CPQ tool in 
+                    ENOVIA's PLM portfolio.The steps followed during the internship were the following:
+                    <ul class="dassault">
+                        <li><b>Dynamic Web Scraping</b> to build a test dataset with data from the web.</li>
+                        <li>Creation of an <b>RDF graph</b> written in Turtle syntax.</li>
+                        <li>Creation of a <b>Retrieval Augmented Generation (RAG) system</b> using a simple Re-Act agent and querying two different data bases:
+                        <ul>
+                            <li>the created RDF graph for structured data and</li>
+                            <li>a FAISS vector database for unstructured data.</li>
+                        </ul></li>
+                        <li>SPARQL query generation with a <b>Mistral LLM, a Chain-of-Thought prompt and in-context learning</b> similar to the user question.</li>
+                        <li>Creation of a simple <b>user interface</b> allowing an easier way to ask questions.</li>
+                    </ul>
+                    After completing the RAG system, I worked with an internal Business Intelligence tool for data analysis.<br><br>
+                    The company wrote a recommendation letter after the end of the internship. It is available <a href="Lettre de recommandation.pdf" target="_blank">here</a>.
+                    </p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <h3>Internship NLP - <a href="https://igm.univ-gustave-eiffel.fr/">Institut Gaspard-Monge</a></h3>
+                    <p>
+                        Three-months internship between May and July 2024 with the following tasks: 
+                        <ul class="igm">
+                            <li>Test new features in the languagle modelling tool <a href="https://unitexgramlab.org/fr" target="_blank">Unitex</a> and add them to the user manual.
+                            The biggest innovation was that the tool now allowed to write functions in Lua for more advanced tasks.</li>
+                            <li>Compare different Named Entity Recognition techniques. The compared techniques were:
+                                <ul>
+                                    <li>Unitex</li>
+                                    <li>spaCy and NLTK</li>
+                                    <li>ChatGPT</li>
+                                </ul>
+                            </li>
+                            <li>Generate fill-in-the-blank sentences for an internal language learning platform with LLMs by Mistral and Meta run locally thanks to ollama.</li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
 
+            <tr>
+                <td>
+                    <h3>Internship Annotation and Data Analysis - <a href="http://www.llf.cnrs.fr/" target="_blank">Laboratioire de Linguistique Formelle</a></h3>
+                    <p>Two-months internship from June to July 2023. The tasks were:
+                        <ul class="llf">
+                            <li>Annotation of Tweets dating from 2020 to 2023. The annotation consisted of analyising the French inclusiv pronoun "iel" 
+                                and determining what kind of person(s) it refers to (non-binary people, mixed groups, none).</li>
+                            <li>Analysis of the annotated results with R to see the evaluation throughout the years and check which group of people uses it in which context.</li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    <p></p>
     <div id ="education">
         <h1>Education</h1>
+        <div class="timeline">
+            <div class="box left">
+                <div class="content">
+                <h2>2023 - 2025</h2>
+                <p><b>Master Natural Language Processing</b><br>
+                University: Univeristé Paris Cité<br>
+                Original Name: Linguistique Informatique<br>
+                Mention: Bien</p>
+                </div>
+            </div>
+            <div class="box right">
+                <div class="content">
+                <h2>2022 - 2023</h2>
+                <p><b>Licence 3 Natural Language Processing</b><br>
+                University: Université Paris Cité<br>
+                Original Name: Linguistique Informatique<br>
+                Mention: Bien</p>
+                </div>
+            </div>
+        </div> 
     </div>
+    <p> </p>
 
     <div id ="fun">
         <h1>Fun Facts</h1>
+        <div class="gallery">
+            <img src="me_jump.jpeg">
+            <div class="desc">Jump Rope is not only a children's sport. There are national and international competitions 
+                    and I made it to the World Jump Rope Championships 2025 in Kawasaki, Japan. 
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="self_made.jpeg">
+            <div class="desc">I also like to stich cloths and accessories. So you will often see me with a self-made coat or a self-made dress. 
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="circus.jpg">
+            <div class="desc">After graduating from school, I worked as a volunteer in a circus where children could learn everything that exists in the circus world.
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="me_baking.jpeg">
+            <div class="desc">Not very out of the common, but I like to bake and cook in my free-time. My favorite projects are fruity cakes. 
+            </div>
+        </div>
+        
     </div>
     
 </body>
